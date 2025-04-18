@@ -14,6 +14,7 @@ gclone() {
 
 # Add files or directories
 ga() {
+  echo "WARNING: check if there are any files to to add to .gitignore for private data"
   git add .
 }
 
@@ -32,6 +33,7 @@ gremote() {
 
 # Push to a branch
 gpush() {
+  echo "WARNING: check if there are any files to to add to .gitignore for private data"
   ga
   gc "$1"
   git push origin "`git branch --show-current`"
