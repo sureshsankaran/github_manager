@@ -32,7 +32,8 @@ gremote() {
 
 # Push to a branch
 gpush() {
-  `gc "$1"`
+  ga
+  gc "$1"
   git push origin "`git branch --show-current`"
 }
 
