@@ -22,7 +22,7 @@ gc() {
   git commit -m "$1"
 }
 
-glog() {
+gl() {
   git log
 }
 
