@@ -1,4 +1,9 @@
 
+ginit() {
+  git config --global $GIT_USER_EMAIL
+  git config --global user.name $GIT_USER_NAME
+  git config --global init.defaultBranch master
+}
 # Create a new private GitHub repo from current directory
 # add repo to remote (master branch)
 gnew() {
@@ -65,4 +70,5 @@ ghprm() {
 gm() {
   git merge "$1"
 }
+ginit
 
