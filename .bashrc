@@ -22,6 +22,10 @@ gc() {
   git commit -m "$1"
 }
 
+glog() {
+  git log
+}
+
 gremote() {
   git remote -v
 }
