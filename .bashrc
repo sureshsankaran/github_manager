@@ -10,6 +10,7 @@ gnew() {
   git init
   gh repo create $1 --public
   git remote add origin https://github.com/sureshsankaran/"$1".git
+  cat ".*" > .gitignore
 }
 
 # Clone a GitHub repo
